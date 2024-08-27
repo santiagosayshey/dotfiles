@@ -31,3 +31,8 @@ WELCOME_MESSAGES=(
 
 # Display a random welcome message each time
 echo "${WELCOME_MESSAGES[$RANDOM % ${#WELCOME_MESSAGES[@]}]}"
+
+# Function to quickly open current directory in file explorer
+o() {
+    xdg-open .
+}
