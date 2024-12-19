@@ -36,3 +36,20 @@ echo "${WELCOME_MESSAGES[$RANDOM % ${#WELCOME_MESSAGES[@]}]}"
 o() {
     xdg-open .
 }
+# Created by `pipx` on 2024-09-07 07:18:35
+export PATH="$PATH:/home/sam-chau/.local/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+env() {
+    if [ ! -d "venv" ]; then
+        python3 -m venv venv
+    fi
+    source venv/bin/activate
+}
+
+export PATH="$HOME/.global_tools/cactus_env/bin:$PATH"
+alias screenoff="gdbus call --session --dest org.gnome.ScreenSaver --object-path /org/gnome/ScreenSaver --method org.gnome.ScreenSaver.Lock"
+
