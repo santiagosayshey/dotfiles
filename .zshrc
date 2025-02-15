@@ -18,7 +18,7 @@ alias c='clear'
 alias ..='cd ..'
 alias myip="hostname -I | awk '{print $1}'"
 alias screenoff="gdbus call --session --dest org.gnome.ScreenSaver --object-path /org/gnome/ScreenSaver --method org.gnome.ScreenSaver.Lock"
-
+alias vim="nvim"
 
 o() {
     xdg-open .
