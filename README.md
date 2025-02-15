@@ -1,39 +1,14 @@
-A customized .bashrc configuration with useful aliases, functions, and a personalized prompt.
+## Terminal Setup
 
-## Installation
+Simple Zsh configuration with Powerlevel10k + custom Gogh AstroDark theme.
 
-1. Clone this repository:
+![Preview](./.github/images/image.png)
 
-   ```bash
-   git clone [your-repo-url]
-   ```
+## Aliases
 
-2. Create a backup of your existing .bashrc:
-
-   ```bash
-   mv ~/.bashrc ~/.bashrc.backup
-   ```
-
-3. Create a symlink to the new .bashrc:
-
-   ```bash
-   ln -s /path/to/cloned/repo/.bashrc ~/.bashrc
-   ```
-
-4. Reload your bash configuration:
-   ```bash
-   source ~/.bashrc
-   ```
-
-## Features
-
-- `ll`: List directory contents with human-readable sizes
-- `c`: Clear terminal screen
-- `..`: Move up one directory
-- `myip`: Show current IP address
-- `update`: Update and upgrade system packages
-- `screenoff`: Lock screen with password protection
-- `o`: Open current directory in file explorer
-- `env`: Create and activate Python virtual environment
-- Custom colored prompt showing exit status, time, user, and current directory
-- Random welcome messages
+- `ll`: List files (long format with hidden)
+- `c`: Clear terminal
+- `..`: Go up one directory
+- `myip`: Show local IP
+- `screenoff`: Lock screen
+- `o`: Open current directory in file manager
