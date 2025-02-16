@@ -65,6 +65,7 @@ alias di='docker images'
 alias drmi='docker rmi'
 alias drm='docker rm'
 alias dprune='docker system prune -a'
+alias dcf='docker compose -f' 
 
 #-------------------------------------------------------------------------------
 # FUNCTIONS
@@ -79,6 +80,14 @@ dcdev() {
     docker compose down
     docker image prune -f
     docker compose up --build
+}
+
+
+# Update function - down, pull, up
+dcup() {
+    docker compose down
+    docker compose pull
+    docker compose up -d
 }
 
 # Docker system cleanup
